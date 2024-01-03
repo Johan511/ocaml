@@ -40,6 +40,8 @@
 #include "caml/startup_aux.h"
 #include "caml/weak.h"
 
+#include <sanitizer/tsan_interface.h>
+
 extern value caml_ephe_none; /* See weak.c */
 struct generic_table CAML_TABLE_STRUCT(char);
 
